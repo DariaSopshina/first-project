@@ -3,7 +3,7 @@
 
 body {
     padding: 0 30px 42px;
-    max-width: 1120px;
+    max-width: 1140px;
     margin: 0 auto;
     font-family: 'TT Lakes';
     line-height: 1.6;
@@ -16,6 +16,7 @@ body {
     height: 88px;
     display: flex;
     align-items: center;
+    background-color: #F8F8F8;
     border-bottom: 1px solid #D9FFF5;
 }
 
@@ -151,6 +152,406 @@ body {
     margin-bottom: 16px;
 }
 
+.header__title,
+.header__technique,
+.header__prices {
+    font-size: 16px;
+    padding: 16px;
+    margin: 0;
+    color: #7E7E82;
+    background: linear-gradient(#F8F8F8 100% #FFFFFF 100%);
+    font-weight: 400;
+    text-transform: uppercase;
+    border-top: 1px solid #D9FFF5;
+}
+
+.brands {
+    height: 100%;
+    padding: 16px 0;
+    background-color: #F8F8F8;
+}
+
+.swiper-wrapper {
+    margin-bottom: 42px;
+}
+
+.swiper-slide {
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color:#DDDDDD;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 8px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.brands__list {
+    display: none;
+    margin: 0 16px;
+    gap: 16px;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.brands__list::-webkit-scrollbar {
+    display: none;
+}
+
+.brands__item {
+    padding: 0 16px;
+    min-width: 240px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.brands__icon-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.brands__logo {
+    max-width: 168px;
+    margin-right: auto;
+}
+
+.brands__readnext,
+.technique__list {
+    display: none;
+}
+
+.technique__item {
+    margin-top: 16px;
+    min-width: 240px;
+    height: 160px;
+    display: flex;
+    font-weight: 600;
+    background-color:  #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+.technique__content p {
+    margin: 16px;
+    font-size: 16px;
+    color: #1B1C21;
+}
+
+.technique__icon {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    position: absolute;
+    bottom: 16px; 
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    flex-shrink: 0; 
+}
+
+.header__prices {
+    margin-bottom: 16px;
+}
+
+.technique__readnext__button{
+    display: none;
+}
+
+.services__list {
+    min-width: 260px;
+    height: 200px;
+    display: flex;
+    background-color:  #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    text-decoration: none;
+    position: relative;
+}
+
+.services__list {
+    padding: 16px;
+    font-size: 14px;
+    display: block;
+}
+
+.services__table_header {
+    color: #7E7E82;
+}
+
+.services__table {
+    font-weight: 500;
+    color: #1B1C21;
+    margin-bottom: 16px;
+}
+
+.services__readnext__button {
+    width: 119px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF3E79;
+    border-width: 0px;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    color: #FFFFFF;
+    font-family: TT Lakes;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.prices__note {
+    margin-bottom: 16px;
+    margin-left: 16px;
+    color: #1B1C21;
+    font-size: 14px;
+}
+
+.offer {
+    margin-bottom: 40px;
+}
+
+.offer__item {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    color: #1B1C21;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+
+.offer__item img {
+    flex-grow: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 16px;
+    font-size: 14px;
+    color: #A0A0A0;
+    border-top: 1px solid #D9FFF5;
+}
+
+.footer__team,
+.footer__disclaimer {
+    margin-bottom: 16px;
+}
+
+.footer__policy {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #A0A0A0;
+    text-decoration: none;
+  }
+  
+  .footer__disclaimer {
+    margin-top: 16px;
+  }
+  
+  .repair-services{
+    display: none;
+  }
+
+  aside {
+    display: none; 
+  }
+
+@media (min-width: 768px) {
+
+    body {
+        height: 322px;
+    }
+
+    .swiper-wrapper {
+        display: none;
+    }
+
+    .brands__list,
+    .brands__readnext__list {
+        margin-bottom: 16px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow-x: none;
+        column-gap: 24px;
+        row-gap: 16px;
+    }
+
+    .brands__readnext__list>.brands__item,
+    .brands__item {
+        width: 240px;
+    }
+
+    .brands__logo {
+        max-width: 152px;
+        margin-right: auto;
+    }
+
+    .brands__list>.brands__item_hidden,
+    .brands__readnext__list_hidden {
+        display: none;
+    }
+
+    .brands__readnext {
+        display: block;
+        margin: 0 16px;
+    }
+
+    .brands__readnext__button,
+    .technique__readnext__button {
+        display: flex;
+        margin-left: 16px;
+        font-weight: 500;
+        background: none;
+        border: none;
+        padding: 0;
+        color: #1B1C21;
+        font: inherit;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    .brands__button-icon {
+        display: flex;
+        margin-right: 9px;
+    }
+
+    .technique__list {
+        margin: 24px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .technique__item {
+        margin-right: 24px;
+    }
+
+    .technique__readnext__button {
+        margin-bottom: 32px;
+    }
+
+    .repair-services {
+        margin-bottom: 24px;
+        display: flex;
+        width: 100%;
+        font-size: 14px;
+        border-collapse: collapse; 
+    }
+
+    table td {
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .repair-services td {
+        padding: 24px;
+        text-align: left;
+        white-space: nowrap;
+        color: #1B1C21;
+        ;
+    }
+
+    .repair-services th {
+        padding: 0 24px 16px;
+        text-align: left;
+        white-space: nowrap;
+        color: #7E7E82;
+
+    }
+
+    .repair-services__link {
+        width: 119px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FF3E79;
+        border-width: 0px;
+        border-radius: 16px;
+        color: #FFFFFF;
+        font-family: TT Lakes;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .prices__note {
+        width: 421px;
+    }
+
+    .footer {
+        background-color: #F9F9F9;
+        font-size: 14px;
+        color: #7E7E82;
+    }
+
+    .footer__wrapper {
+        padding-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer__item {
+        flex-basis: 33.33%; 
+    }
+
+    .footer__info {
+        text-align: left; 
+    }
+
+    .footer__policy {
+        text-align: center;
+    }
+
+    .footer__disclaimer {
+        text-align: right;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .brands__list,
+    .brands__readnext__list {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 32px;
+    }
+
+    .brands__list>.brands__item_hidden {
+        display: flex;
+    }
+}
 
 @media (max-width: 320px) {
 
@@ -161,7 +562,6 @@ body {
     .header__block__2 {
         display: none;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -172,9 +572,7 @@ body {
 
     .nav__list {
         -ms-overflow-style: none;
-        /* Для Internet Explorer и Edge */
         scrollbar-width: none;
-        /* Для Firefox */
     }
 
     body {
@@ -248,10 +646,150 @@ body {
 
     .nav__header {
         margin-top: 42px;
-        margin-right: 25px;
     }
 
     .nav__header__title {
         margin-bottom: 8px;
     }
+    
+    .fixed-container {
+        max-width: 320px;
+        height: 100%;
+        padding: 18px 24px 32px;
+        position: fixed;
+        overflow-y: auto;
+        box-shadow: 0 16px 52px rgba(14, 24, 80, 0.30);
+    }
+    
+    .icon-circle {
+        width: 40px;
+        height: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header__burger {
+        margin-right: 16px;
+    }
+    
+    .header__logo {
+        margin-right: 78px;
+    }
+    
+    .menu__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .menu_border {
+        height: 32px;
+        width: 4px;
+        background-color: #41F6D7;
+        border-radius: 4px;
+        position: absolute;
+        left: -24px;
+    }
+
+    aside {
+        display: block;
+        background-color: #FFFFFF;
+      }
+
+    .sidebar {
+        float: left;
+        height: 100%;
+    }
+
+    .header__sidebar {
+        margin-bottom: 46px;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-container {
+        background-color: #FFFFFF;
+      }
+    
+    .menu__vertical {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .menu__vertical li {
+        margin-bottom: 32px;
+    }
+    
+    .menu__vertical a {
+        display: block;
+        text-decoration: none;
+        color: #1B1C21;
+    }
+    
+    .language-switcher .lang:hover,
+    .menu__vertical a:hover {
+        color: #7E7E82;
+        opacity: 0.7;
+        filter: brightness(1.2);
+    }
+    
+    .contacts {
+        margin-top: 268px;
+    }
+    
+    .contacts__icon {
+        display: flex;
+        margin-bottom: 16px;
+    }
+    
+    .contacts__icon__phone,
+    .contacts__icon__chat,
+    .ontacts__icon__profile {
+        margin-right: 16px;
+    }
+    
+    .contacts a {
+        text-decoration: none;
+        color: #1B1C21;
+    }
+    
+    .contacts__mail {
+        margin-bottom: 12px;
+    }
+    
+    .contacts__phone {
+        margin-bottom: 40px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #1B1C21;
+    }
+    
+    .language-switcher {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+    }
+    
+    .language-switcher li {
+        margin: 0;
+    }
+    
+    .lang {
+        margin-right: 7px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 0;
+    }
 }
+
+
+
+    
+    
