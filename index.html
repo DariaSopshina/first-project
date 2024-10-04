@@ -1,541 +1,742 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CPS</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</head>
+  <body>
+    <!-- <aside> -->
+    <!-- <div class="main-container"> -->
+    <div class="sidebar">
+      <header class="header__sidebar">
+        <a href="#!" class="header__logo">
+          <img src="./img/svg/Group.svg" alt="Логотип" />
+        </a>
+        <a href="#!" class="header__search">
+          <div class="header__sidebar_icon-circle">
+            <img src="./img/svg/icon2.svg" alt="Лупа" />
+          </div>
+        </a>
+      </header>
 
-<body>
-    <aside>
-        <div class="main-container">
-            <div class="sidebar">
-              <header class="header__sidebar">
-                <a href="#!" class="header__logo">
-                  <img src="./img/svg/Group.svg" alt="Логотип">
-                </a>
-                <a href="#!" class="header__search">
-                  <div class="icon-circle">
-                    <img src="./img/svg/icon2.svg" alt="Лупа">
-                  </div>
-                </a>
-              </header>
-              
-              <section class="menu">
-                <ul class="menu__vertical">
-                  <li class="menu__item">
-                    <div class="menu_border"></div>
-                    <a href="#">Ремонт техники</a>
-                  </li>
-                  <li><a href="#">Корпоративным клиентам</a></li>
-                  <li><a href="#">Продавцам техники</a></li>
-                  <li><a href="#">Партнерам</a></li>
-                  <li><a href="#">Производителям</a></li>
-                  <li><a href="#">Наши сервисные центры</a></li>
-                  <li><a href="#">Контакты</a></li>
-                </ul>
-              </section>
-              
-              <footer class="footer">
-                <div class="contacts">
-                  <div class="contacts__icon">
-                    <a href="#!" class="contacts__icon__phone">
-                      <div class="icon-circle">
-                        <img src="./img/svg/icon3.svg" alt="Телефон">
-                      </div>
-                    </a>
-                    <a href="#!" class="contacts__icon__chat">
-                      <div class="icon-circle">
-                        <img src="./img/svg/icon4.svg" alt="Чат">
-                      </div>
-                    </a>
-                    <a href="#!" class="contacts__icon__profile">
-                      <div class="icon-circle">
-                        <img src="./img/svg/Group 2.svg" alt="Профиль">
-                      </div>
-                    </a>
-                  </div>
-                  <div class="contacts__mail">
-                    <a href="mailto:mail@cps.com">mail@cps.com</a>
-                  </div>
-                  <div class="contacts__phone">8 800 890 8900</div>
-                  <ul class="language-switcher">
-                    <li><button class="lang">RU</button></li>
-                    <li><button class="lang">EN</button></li>
-                    <li><button class="lang">CH</button></li>
-                  </ul>
-                </div>
-              </footer>
-            </div>
-        </div>
-    </aside>
-    
+      <section class="menu">
+        <ul class="menu__vertical">
+          <li class="menu__item">
+            <div class="menu_border"></div>
+            <a href="#">Ремонт техники</a>
+          </li>
+          <li><a href="#">Корпоративным клиентам</a></li>
+          <li><a href="#">Продавцам техники</a></li>
+          <li><a href="#">Партнерам</a></li>
+          <li><a href="#">Производителям</a></li>
+          <li><a href="#">Наши сервисные центры</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </section>
 
-    <header class="header">
-        <div class="header__block__1">
-            <img src="./img/svg/burger.svg" alt="Меню" class="header__block__1__menu">
-            <img src="./img/svg/divider.svg" alt="Разделитель" class="header__block__1__divider">
-            <a href="/" class="header__logo-link">
-                <img src="./img/svg/Group.svg" alt="Логотип" class="header__header__block__1__logo">
+      <footer class="footer">
+        <div class="contacts">
+          <div class="contacts__icon">
+            <a href="#!" class="contacts__icon__phone">
+              <div class="icon-circle">
+                <img src="./img/svg/icon3.svg" alt="Телефон" />
+              </div>
             </a>
+            <a href="#!" class="contacts__icon__chat">
+              <div class="icon-circle">
+                <img src="./img/svg/icon4.svg" alt="Чат" />
+              </div>
+            </a>
+            <a href="#!" class="contacts__icon__profile">
+              <div class="icon-circle">
+                <img src="./img/svg/Group 2.svg" alt="Профиль" />
+              </div>
+            </a>
+          </div>
+          <div class="contacts__mail">
+            <a href="mailto:mail@cps.com">mail@cps.com</a>
+          </div>
+          <div class="contacts__phone">8 800 890 8900</div>
+          <ul class="language-switcher">
+            <li><button class="lang">RU</button></li>
+            <li><button class="lang">EN</button></li>
+            <li><button class="lang">CH</button></li>
+          </ul>
+        </div>
+      </footer>
+      <!-- </div> -->
+    </div>
+    <!-- </aside> -->
+
+    <div class="content-wrapper">
+      <header class="header">
+        <div class="header__block__1">
+          <img
+            src="./img/svg/burger.svg"
+            alt="Меню"
+            class="header__block__1__menu"
+          />
+          <img
+            src="./img/svg/divider.svg"
+            alt="Разделитель"
+            class="header__block__1__divider"
+          />
+          <a href="/" class="header__logo-link">
+            <img
+              src="./img/svg/Group.svg"
+              alt="Логотип"
+              class="header__header__block__1__logo"
+            />
+          </a>
         </div>
         <div class="header__block__2">
-            <img src="./img/svg/call.svg" alt="Телефон" class="header__block__2__item">
-            <img src="./img/svg/chat.svg" alt="Чат" class="header__block__2__item">
-            <img src="./img/svg/profile.svg" alt="Профиль" class="header__block__2__item">
+          <img
+            src="./img/svg/call.svg"
+            alt="Телефон"
+            class="header__block__2__item"
+          />
+          <img
+            src="./img/svg/chat.svg"
+            alt="Чат"
+            class="header__block__2__item"
+          />
+          <img
+            src="./img/svg/profile.svg"
+            alt="Профиль"
+            class="header__block__2__item"
+          />
         </div>
         <div class="header__block__3">
-            <img src="./img/svg/divider.svg" alt="Разделитель" class="header__block__3__divider">
-            <img src="./img/svg/repair.svg" alt="Инструменты" class="header__block__3__item">
-            <img src="./img/svg/checkstatus.svg" alt="Лупа" class="header__block__3__item">
+          <img
+            src="./img/svg/divider.svg"
+            alt="Разделитель"
+            class="header__block__3__divider"
+          />
+          <img
+            src="./img/svg/repair.svg"
+            alt="Инструменты"
+            class="header__block__3__item"
+          />
+          <img
+            src="./img/svg/checkstatus.svg"
+            alt="Лупа"
+            class="header__block__3__item"
+          />
         </div>
-    </header>
+      </header>
 
-    <nav class="nav__wrapper">
-        <div class="nav__header">
+      <div class="navigation-wrapper">
+        <nav class="nav__wrapper">
+          <div class="nav__header">
             <div class="nav__header__title__wrapper">
-                <div class="nav__header__title_border"></div>
-                <h1 class="nav__header__title">
-                    Услуги и сервисы
-                </h1>
+              <div class="nav__header__title_border"></div>
+              <h1 class="nav__header__title">Услуги и сервисы</h1>
             </div>
             <ul class="nav__header__nav__list">
-                <li class="nav__header__nav__list__item">
-                    <a href="#!" class="nav__header__nav__list__link">Оставить заявку</a>
-                    <img src="./img/svg/repair.svg" alt="Инструменты" class="header__svg">
-                </li>
-                <li class="nav__header__nav__list__item">
-                    <a href="#!" class="nav__header__nav__list__link">Статус ремонта</a>
-                    <img src="./img/svg/checkstatus.svg" alt="Лупа" class="header__svg">
-                </li>
+              <li class="nav__header__nav__list__item">
+                <a href="#!" class="nav__header__nav__list__link"
+                  >Оставить заявку</a
+                >
+                <img
+                  src="./img/svg/repair.svg"
+                  alt="Инструменты"
+                  class="header__svg"
+                />
+              </li>
+              <li class="nav__header__nav__list__item">
+                <a href="#!" class="nav__header__nav__list__link"
+                  >Статус ремонта</a
+                >
+                <img
+                  src="./img/svg/checkstatus.svg"
+                  alt="Лупа"
+                  class="header__svg"
+                />
+              </li>
             </ul>
-        </div>
-        <ul class="nav__list">
+          </div>
+          <ul class="nav__list">
             <li class="nav__item nav__item_outlined">
-                <a href="#!" class="nav__link">Ремонтируемые бренды</a>
+              <a href="#!" class="nav__link">Ремонтируемые бренды</a>
             </li>
             <li class="nav__item">
-                <a href="#!" class="nav__link">Ремонтируемые устройства</a>
+              <a href="#!" class="nav__link">Ремонтируемые устройства</a>
             </li>
             <li class="nav__item">
-                <a href="#!" class="nav__link">Цены на услуги</a>
+              <a href="#!" class="nav__link">Цены на услуги</a>
             </li>
             <li class="nav__item">
-                <a href="#!" class="nav__link">Адреса сервисных центров</a>
+              <a href="#!" class="nav__link">Адреса сервисных центров</a>
             </li>
             <li class="nav__item">
-                <a href="#!" class="nav__link">Специальные цены</a>
+              <a href="#!" class="nav__link">Специальные цены</a>
             </li>
             <li class="nav__item">
-                <a href="#!" class="nav__link">Отзывы</a>
+              <a href="#!" class="nav__link">Отзывы</a>
             </li>
-        </ul>
-    </nav>
+          </ul>
+        </nav>
+      </div>
 
-    <main class="main__content">
+      <main class="main__content">
         <div class="main__content__text">
-            <p class="main__content__description">Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            </p>
+          <p class="main__content__description">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
 
-            <p class="main__content__description">Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера, что подтверждает
-                большоеколичество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь, советуют нас родным и близким.</p>
-            <div class="main__readnext">
-                <img src="./img/svg/expand.svg" alt="Стрелочки вниз" class="main__expand">
-                <a class="main__readnext-link" href="#">Читать далее</a>
-            </div>
+          <p class="main__content__description">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большоеколичество постоянных клиентов. Мы
+            гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
+          <div class="main__readnext">
+            <img
+              src="./img/svg/expand.svg"
+              alt="Стрелочки вниз"
+              class="main__expand"
+            />
+            <a class="main__readnext-link" href="#">Читать далее</a>
+          </div>
         </div>
-        <img src="./img/_MG_3223.png" alt="Вывеска с названием компании" class="main_png">
-    </main>
+        <img
+          src="./img/_MG_3223.png"
+          alt="Вывеска с названием компании"
+          class="main_png"
+        />
+      </main>
 
-    <div class="header__brands">
+      <div class="header__brands">
         <h1 class="header__title">Ремонт техники различных брендов</h1>
-    </div>
-    <section class="brands">
+      </div>
+      <section class="brands">
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="#" class="brands__item">
-                        <img src="./img/Bitmap.svg" alt="Lenovo" class="brands__logo">
-                        <div class="brands__icon-circle">
-                            <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                        </div>
-                    </a>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="brands__item">
+                <img src="./img/Bitmap.svg" alt="Lenovo" class="brands__logo" />
+                <div class="brands__icon-circle">
+                  <img
+                    src="./img/dropdown.svg"
+                    alt="Далее"
+                    class="brands__icon"
+                  />
                 </div>
-                <div class="swiper-slide">
-                    <a href="#" class="brands__item">
-                        <img src="./img/Bitmap_2.svg" alt="Samsung" class="brands__logo">
-                        <div class="brands__icon-circle">
-                            <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="brands__item">
-                        <img src="./img/Bitmap_3.svg" alt="Apple" class="brands__logo">
-                        <div class="brands__icon-circle">
-                            <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="brands__item">
-                        <img src="./img/Bitmap_7.svg" alt="ViewSonic" class="brands__logo">
-                        <div class="brands__icon-circle">
-                            <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="brands__item">
-                        <img src="./img/Bitmap_4.svg" alt="Bosch" class="brands__logo">
-                        <div class="brands__icon-circle">
-                            <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="brands__item">
-                        <img src="./img/Bitmap_5.svg" alt="hp" class="brands__logo">
-                        <div class="brands__icon-circle">
-                            <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="brands__item">
-                        <img src="./img/Bitmap_6.svg" alt="Acer" class="brands__logo">
-                        <div class="brands__icon-circle">
-                            <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="brands__item">
-                        <img src="./img/Bitmap_8.svg" alt="Sony" class="brands__logo">
-                        <div class="brands__icon-circle">
-                            <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                        </div>
-                    </a>
-                </div>
+              </a>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide">
+              <a href="#" class="brands__item">
+                <img
+                  src="./img/Bitmap_2.svg"
+                  alt="Samsung"
+                  class="brands__logo"
+                />
+                <div class="brands__icon-circle">
+                  <img
+                    src="./img/dropdown.svg"
+                    alt="Далее"
+                    class="brands__icon"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="brands__item">
+                <img
+                  src="./img/Bitmap_3.svg"
+                  alt="Apple"
+                  class="brands__logo"
+                />
+                <div class="brands__icon-circle">
+                  <img
+                    src="./img/dropdown.svg"
+                    alt="Далее"
+                    class="brands__icon"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="brands__item">
+                <img
+                  src="./img/Bitmap_7.svg"
+                  alt="ViewSonic"
+                  class="brands__logo"
+                />
+                <div class="brands__icon-circle">
+                  <img
+                    src="./img/dropdown.svg"
+                    alt="Далее"
+                    class="brands__icon"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="brands__item">
+                <img
+                  src="./img/Bitmap_4.svg"
+                  alt="Bosch"
+                  class="brands__logo"
+                />
+                <div class="brands__icon-circle">
+                  <img
+                    src="./img/dropdown.svg"
+                    alt="Далее"
+                    class="brands__icon"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="brands__item">
+                <img src="./img/Bitmap_5.svg" alt="hp" class="brands__logo" />
+                <div class="brands__icon-circle">
+                  <img
+                    src="./img/dropdown.svg"
+                    alt="Далее"
+                    class="brands__icon"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="brands__item">
+                <img src="./img/Bitmap_6.svg" alt="Acer" class="brands__logo" />
+                <div class="brands__icon-circle">
+                  <img
+                    src="./img/dropdown.svg"
+                    alt="Далее"
+                    class="brands__icon"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="brands__item">
+                <img src="./img/Bitmap_8.svg" alt="Sony" class="brands__logo" />
+                <div class="brands__icon-circle">
+                  <img
+                    src="./img/dropdown.svg"
+                    alt="Далее"
+                    class="brands__icon"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
         <div class="brands__list">
-            <a href="#" class="brands__item">
-                <img src="./img/Bitmap.svg" alt="Lenovo" class="brands__logo">
-                <div class="brands__icon-circle">
-                    <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                </div>
-            </a>
-            <a href="#" class="brands__item">
-                <img src="./img/Bitmap_2.svg" alt="Samsung" class="brands__logo">
-                <div class="brands__icon-circle">
-                    <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                </div>
-            </a>
-            <a href="#" class="brands__item">
-                <img src="./img/Bitmap_3.svg" alt="Apple" class="brands__logo">
-                <div class="brands__icon-circle">
-                    <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                </div>
-            </a>
-            <a href="#" class="brands__item brands__item_hidden">
-                <img src="./img/Bitmap_7.svg" alt="ViewSonic" class="brands__logo">
-                <div class="brands__icon-circle">
-                    <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                </div>
-            </a>
-            <a href="#" class="brands__item">
-                <img src="./img/Bitmap_4.svg" alt="Bosch" class="brands__logo">
-                <div class="brands__icon-circle">
-                    <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                </div>
-            </a>
-            <a href="#" class="brands__item">
-                <img src="./img/Bitmap_5.svg" alt="hp" class="brands__logo">
-                <div class="brands__icon-circle">
-                    <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                </div>
-            </a>
-            <a href="#" class="brands__item">
-                <img src="./img/Bitmap_6.svg" alt="Acer" class="brands__logo">
-                <div class="brands__icon-circle">
-                    <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                </div>
-            </a>
-            <a href="#" class="brands__item brands__item_hidden">
-                <img src="./img/Bitmap_8.svg" alt="Sony" class="brands__logo">
-                <div class="brands__icon-circle">
-                    <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                </div>
-            </a>
+          <a href="#" class="brands__item">
+            <img src="./img/Bitmap.svg" alt="Lenovo" class="brands__logo" />
+            <div class="brands__icon-circle">
+              <img src="./img/dropdown.svg" alt="Далее" class="brands__icon" />
+            </div>
+          </a>
+          <a href="#" class="brands__item">
+            <img src="./img/Bitmap_2.svg" alt="Samsung" class="brands__logo" />
+            <div class="brands__icon-circle">
+              <img src="./img/dropdown.svg" alt="Далее" class="brands__icon" />
+            </div>
+          </a>
+          <a href="#" class="brands__item">
+            <img src="./img/Bitmap_3.svg" alt="Apple" class="brands__logo" />
+            <div class="brands__icon-circle">
+              <img src="./img/dropdown.svg" alt="Далее" class="brands__icon" />
+            </div>
+          </a>
+          <a href="#" class="brands__item brands__item_hidden">
+            <img
+              src="./img/Bitmap_7.svg"
+              alt="ViewSonic"
+              class="brands__logo"
+            />
+            <div class="brands__icon-circle">
+              <img src="./img/dropdown.svg" alt="Далее" class="brands__icon" />
+            </div>
+          </a>
+          <a href="#" class="brands__item">
+            <img src="./img/Bitmap_4.svg" alt="Bosch" class="brands__logo" />
+            <div class="brands__icon-circle">
+              <img src="./img/dropdown.svg" alt="Далее" class="brands__icon" />
+            </div>
+          </a>
+          <a href="#" class="brands__item">
+            <img src="./img/Bitmap_5.svg" alt="hp" class="brands__logo" />
+            <div class="brands__icon-circle">
+              <img src="./img/dropdown.svg" alt="Далее" class="brands__icon" />
+            </div>
+          </a>
+          <a href="#" class="brands__item">
+            <img src="./img/Bitmap_6.svg" alt="Acer" class="brands__logo" />
+            <div class="brands__icon-circle">
+              <img src="./img/dropdown.svg" alt="Далее" class="brands__icon" />
+            </div>
+          </a>
+          <a href="#" class="brands__item brands__item_hidden">
+            <img src="./img/Bitmap_8.svg" alt="Sony" class="brands__logo" />
+            <div class="brands__icon-circle">
+              <img src="./img/dropdown.svg" alt="Далее" class="brands__icon" />
+            </div>
+          </a>
         </div>
         <div class="brands__readnext">
-            <div class="brands__readnext__list brands__readnext__list_hidden">
-                <a href="#" class="brands__item">
-                    <img src="./img/Bitmap.svg" alt="Lenovo" class="brands__logo">
-                    <div class="brands__icon-circle">
-                        <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                    </div>
-                </a>
-                <a href="#" class="brands__item">
-                    <img src="./img/Bitmap_2.svg" alt="Samsung" class="brands__logo">
-                    <div class="brands__icon-circle">
-                        <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                    </div>
-                </a>
-                <a href="#" class="brands__item">
-                    <img src="./img/Bitmap_3.svg" alt="Apple" class="brands__logo">
-                    <div class="brands__icon-circle">
-                        <img src="./img/dropdown.svg" alt="Далее" class="brands__icon">
-                    </div>
-                </a>
-            </div>
-            <button class="brands__readnext__button button-open">
-                <span class="brands__button-icon">
-                    <img src="./img/expand.svg" alt="Стрелка" class="brands__button__arrow-icon">
-                </span>
-                Показать все
-            </button>
+          <div class="brands__readnext__list brands__readnext__list_hidden">
+            <a href="#" class="brands__item">
+              <img src="./img/Bitmap.svg" alt="Lenovo" class="brands__logo" />
+              <div class="brands__icon-circle">
+                <img
+                  src="./img/dropdown.svg"
+                  alt="Далее"
+                  class="brands__icon"
+                />
+              </div>
+            </a>
+            <a href="#" class="brands__item">
+              <img
+                src="./img/Bitmap_2.svg"
+                alt="Samsung"
+                class="brands__logo"
+              />
+              <div class="brands__icon-circle">
+                <img
+                  src="./img/dropdown.svg"
+                  alt="Далее"
+                  class="brands__icon"
+                />
+              </div>
+            </a>
+            <a href="#" class="brands__item">
+              <img src="./img/Bitmap_3.svg" alt="Apple" class="brands__logo" />
+              <div class="brands__icon-circle">
+                <img
+                  src="./img/dropdown.svg"
+                  alt="Далее"
+                  class="brands__icon"
+                />
+              </div>
+            </a>
+          </div>
+          <button class="brands__readnext__button button-open">
+            <span class="brands__button-icon">
+              <img
+                src="./img/expand.svg"
+                alt="Стрелка"
+                class="brands__button__arrow-icon"
+              />
+            </span>
+            Показать все
+          </button>
         </div>
-    </section>
+      </section>
 
-    <div class="header__technique">
+      <div class="header__technique">
         <h1 class="header__technique__title">Ремонт различных видов техники</h1>
-    </div>
+      </div>
 
-    <section class="technique techniqueSwiper">
+      <section class="technique techniqueSwiper">
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="#" class="technique__item">
-                        <div class="technique__content">
-                            <p>Ремонт ноутбуков</p>
-                            <div class="technique__icon">
-                                <img src="./img/dropdown.svg" alt="Далее" class="technique__button">
-                            </div>
-                        </div>
-                    </a>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="technique__item">
+                <div class="technique__content">
+                  <p>Ремонт ноутбуков</p>
+                  <div class="technique__icon">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="Далее"
+                      class="technique__button"
+                    />
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                    <a href="#" class="technique__item">
-                        <div class="technique__content">
-                            <p>Ремонт планшетов</p>
-                            <div class="technique__icon">
-                                <img src="./img/dropdown.svg" alt="Далее" class="technique__button">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="technique__item">
-                        <div class="technique__content">
-                            <p>Ремонт ПК</p>
-                            <div class="technique__icon">
-                                <img src="./img/dropdown.svg" alt="Далее" class="technique__button">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="technique__item">
-                        <div class="technique__content">
-                            <p>Ремонт мониторов</p>
-                            <div class="technique__icon">
-                                <img src="./img/dropdown.svg" alt="Далее" class="technique__button">
-                            </div>
-                        </div>
-                    </a>
-                </div>
+              </a>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide">
+              <a href="#" class="technique__item">
+                <div class="technique__content">
+                  <p>Ремонт планшетов</p>
+                  <div class="technique__icon">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="Далее"
+                      class="technique__button"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="technique__item">
+                <div class="technique__content">
+                  <p>Ремонт ПК</p>
+                  <div class="technique__icon">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="Далее"
+                      class="technique__button"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="technique__item">
+                <div class="technique__content">
+                  <p>Ремонт мониторов</p>
+                  <div class="technique__icon">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="Далее"
+                      class="technique__button"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
         <div class="technique__list">
-                <a href="#" class="technique__item">
-                    <div class="technique__content">
-                        <p>Ремонт ноутбуков</p>
-                        <div class="technique__icon">
-                            <img src="./img/dropdown.svg" alt="Далее" class="technique__button">
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="technique__item">
-                    <div class="technique__content">
-                        <p>Ремонт планшетов</p>
-                        <div class="technique__icon">
-                            <img src="./img/dropdown.svg" alt="Далее" class="technique__button">
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="technique__item">
-                    <div class="technique__content">
-                        <p>Ремонт ПК</p>
-                        <div class="technique__icon">
-                            <img src="./img/dropdown.svg" alt="Далее" class="technique__button">
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="technique__item">
-                    <div class="technique__content">
-                        <p>Ремонт мониторов</p>
-                        <div class="technique__icon">
-                            <img src="./img/dropdown.svg" alt="Далее" class="technique__button">
-                        </div>
-                    </div>
-                </a>
-        </div>
-         <button class="technique__readnext__button button-open">
-            <div class="technique__readnext__icon">
-                <img src="./img/expand.svg" alt="Стрелка" class="technique__button__arrow-icon">
+          <a href="#" class="technique__item">
+            <div class="technique__content">
+              <p>Ремонт ноутбуков</p>
+              <div class="technique__icon">
+                <img
+                  src="./img/dropdown.svg"
+                  alt="Далее"
+                  class="technique__button"
+                />
+              </div>
             </div>
-            Показать все
+          </a>
+          <a href="#" class="technique__item">
+            <div class="technique__content">
+              <p>Ремонт планшетов</p>
+              <div class="technique__icon">
+                <img
+                  src="./img/dropdown.svg"
+                  alt="Далее"
+                  class="technique__button"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="#" class="technique__item">
+            <div class="technique__content">
+              <p>Ремонт ПК</p>
+              <div class="technique__icon">
+                <img
+                  src="./img/dropdown.svg"
+                  alt="Далее"
+                  class="technique__button"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="#" class="technique__item">
+            <div class="technique__content">
+              <p>Ремонт мониторов</p>
+              <div class="technique__icon">
+                <img
+                  src="./img/dropdown.svg"
+                  alt="Далее"
+                  class="technique__button"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <button class="technique__readnext__button button-open">
+          <div class="technique__readnext__icon">
+            <img
+              src="./img/expand.svg"
+              alt="Стрелка"
+              class="technique__button__arrow-icon"
+            />
+          </div>
+          Показать все
         </button>
-    </section>
+      </section>
 
-    <div class="header__prices">
+      <div class="header__prices">
         <h1 class="header__prices__title">цены на услуги</h1>
-    </div>
+      </div>
 
-    <section class="services">
+      <section class="services">
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="services__list">
-                        <p class="services__table_header">Ремонтные услуги</p>
-                        <p class="services__table">Тестирование с выдачей <br> технического заключения</p>
-                        <p class="services__table_header">Цена</p>
-                        <p class="services__table">Бесплатно</p>
-                        <p class="services__table_header">Срок</p>
-                        <p class="services__table">30-120 мин</p>
-                        <button class="services__readnext__button">
-                            заказать
-                            <img src="./img/goside.svg" alt="Далее">
-                        </button>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="services__list">
-                        <p class="services__table_header">Ремонтные услуги</p>
-                        <p class="services__table">Диагностика</p>
-                        <p class="services__table_header">Цена</p>
-                        <p class="services__table">Бесплатно</p>
-                        <p class="services__table_header">Срок</p>
-                        <p class="services__table">30 мин</p>
-                        <button class="services__readnext__button">
-                            заказать
-                            <img src="./img/goside.svg" alt="Далее">
-                        </button>
-                    </div>
-                </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="services__list">
+                <p class="services__table_header">Ремонтные услуги</p>
+                <p class="services__table">
+                  Тестирование с выдачей <br />
+                  технического заключения
+                </p>
+                <p class="services__table_header">Цена</p>
+                <p class="services__table">Бесплатно</p>
+                <p class="services__table_header">Срок</p>
+                <p class="services__table">30-120 мин</p>
+                <button class="services__readnext__button">
+                  заказать
+                  <img src="./img/goside.svg" alt="Далее" />
+                </button>
+              </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide">
+              <div class="services__list">
+                <p class="services__table_header">Ремонтные услуги</p>
+                <p class="services__table">Диагностика</p>
+                <p class="services__table_header">Цена</p>
+                <p class="services__table">Бесплатно</p>
+                <p class="services__table_header">Срок</p>
+                <p class="services__table">30 мин</p>
+                <button class="services__readnext__button">
+                  заказать
+                  <img src="./img/goside.svg" alt="Далее" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
-    <table class="repair-services">
-        <tr>
+        <table class="repair-services">
+          <tr>
             <th>Ремонтные услуги</th>
             <th>Цена</th>
             <th>Срок</th>
             <th></th>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Диагностика</td>
             <td>Бесплатно</td>
             <td>30 мин</td>
-            <td><a class="repair-services__link">
+            <td>
+              <a class="repair-services__link">
                 заказать
-                <img src="./img/goside.svg" alt="Далее">
-            </a>
+                <img src="./img/goside.svg" alt="Далее" />
+              </a>
             </td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Замена дисплея</td>
             <td>1 000 ₽</td>
             <td>30-120 мин</td>
-            <td><a class="repair-services__link">
+            <td>
+              <a class="repair-services__link">
                 заказать
-                <img src="./img/goside.svg" alt="Далее">
-            </a>
+                <img src="./img/goside.svg" alt="Далее" />
+              </a>
             </td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Замена полифонического динамика</td>
             <td>1 000 ₽</td>
             <td>30-120 мин</td>
-            <td><a class="repair-services__link">
+            <td>
+              <a class="repair-services__link">
                 заказать
-                <img src="./img/goside.svg" alt="Далее">
-            </a>
+                <img src="./img/goside.svg" alt="Далее" />
+              </a>
             </td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Тестирование с выдачей технического заключения</td>
             <td>1 000 ₽</td>
             <td>30-120 мин</td>
-            <td><a class="repair-services__link">
+            <td>
+              <a class="repair-services__link">
                 заказать
-                <img src="./img/goside.svg" alt="Далее">
-            </a>
+                <img src="./img/goside.svg" alt="Далее" />
+              </a>
             </td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Замена программного обеспечения</td>
             <td>1 000 ₽</td>
             <td>30-120 мин</td>
-            <td><a class="repair-services__link">
+            <td>
+              <a class="repair-services__link">
                 заказать
-                <img src="./img/goside.svg" alt="Далее">
-            </a>
+                <img src="./img/goside.svg" alt="Далее" />
+              </a>
             </td>
-        </tr>
-    </table>
-    </section>
+          </tr>
+        </table>
+      </section>
 
-    <div class="prices__note">
-        <p class="prices__note__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку. </p>
-    </div>
+      <!-- <div class="feedback"></div>
+        <button class="feedback__close-btn">×</button>
+        <h2 class="feedback__title">Обратная связь</h2>
+        <form class="feedback__form">
+            <input type="text" class="feedback__input" placeholder="Имя" required>
+            <input type="tel" class="feedback__input" placeholder="Телефон" required>
+            <input type="email" class="feedback__input" placeholder="Электронная почта" required>
+            <textarea class="feedback__input feedback__textarea" placeholder="Сообщение" required></textarea>
+            <p class="feedback__agreement">
+                Нажимая "отправить", вы даете согласие на обработку персональных данных и соглашаетесь с нашей
+                <a href="#" class="feedback__policy-link">политикой конфиденциальности</a>.
+            </p>
+            <button type="submit" class="feedback__submit-btn">Отправить <span>></span></button>
+        </form>
+    </div> -->
 
-    <div class="offer">
-        <a href="#" class="offer__item">Получить коммерческое предложение
-            <img src="./img/more.svg" alt="Далее">
+      <div class="prices__note">
+        <p class="prices__note__text">
+          Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+          услугу. Для получения коммерческого предложения на постоянное
+          обслуживание, оставьте заявку.
+        </p>
+      </div>
+
+      <div class="offer">
+        <a href="#" class="offer__item"
+          >Получить коммерческое предложение
+          <img src="./img/more.svg" alt="Далее" />
         </a>
-    </div>
+      </div>
 
-    <footer class="footer">
+      <footer class="site-footer">
         <div class="footer__wrapper">
-            <div class="footer__info footer__item">
-                <p class="footer__copyright">© 2019 CPS</p>
-                <p class="footer__team">Разработано командой Apesong</p>
-            </div>
-            <a href="#" class="footer__policy footer__item">Политика конфиденциальности</a>
-            <p class="footer__disclaimer footer__item">Информация, размещенная на данной странице, не является публичной офертой</p>
+          <div class="footer__info footer__item">
+            <p class="footer__copyright">© 2019 CPS</p>
+            <p class="footer__team">Разработано командой Apesong</p>
+          </div>
+          <a href="#" class="footer__policy footer__item"
+            >Политика конфиденциальности</a
+          >
+          <p class="footer__disclaimer footer__item">
+            Информация, размещенная на данной странице, не является публичной
+            офертой
+          </p>
         </div>
-        
-    </footer>
-
+      </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 'auto',
         spaceBetween: 16,
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
         },
       });
-      
     </script>
     <script src="./script.js" defer></script>
-</body>
+  </body>
 </html>
