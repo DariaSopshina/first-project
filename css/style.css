@@ -2,7 +2,7 @@
 
 body {
   display: flex;
-  padding: 0 30px 42px;
+  padding: 0px;
   margin: 0 auto;
   font-family: 'TT Lakes';
   line-height: 1.6;
@@ -17,6 +17,11 @@ body {
   align-items: center;
   background-color: #ffffff;
   border-bottom: 1px solid #d9fff5;
+}
+
+.content-wrapper {
+  padding: 0 16px 24px;
+  max-width: 100%;
 }
 
 .header__block__1 {
@@ -128,6 +133,11 @@ body {
   margin-bottom: 32px;
   justify-content: space-between;
   color: #1b1c21;
+}
+
+.main_png {
+  width: 320px;
+  height: 176px;
 }
 
 .main__content__text {
@@ -244,7 +254,6 @@ body {
   min-width: 240px;
   height: 160px;
   display: flex;
-  margin: 0 24px 0 0;
   font-weight: 600;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
@@ -271,10 +280,6 @@ body {
   border: 2px solid #ff3e79;
   border-radius: 50%;
   flex-shrink: 0;
-}
-
-.header__prices {
-  margin-bottom: 30px;
 }
 
 .technique__readnext__button {
@@ -329,7 +334,6 @@ body {
 
 .prices__note {
   margin-bottom: 16px;
-  margin-left: 16px;
   color: #1b1c21;
   font-size: 14px;
 }
@@ -345,7 +349,6 @@ body {
   color: #1b1c21;
   font-size: 16px;
   font-weight: 500;
-  margin-left: 16px;
 }
 
 .offer__item img {
@@ -381,6 +384,10 @@ body {
 }
 
 .sidebar {
+  display: none;
+}
+
+.menu__icon {
   display: none;
 }
 
@@ -469,8 +476,19 @@ body {
     margin-left: 5px;
 } */
 
+@media (max-width: 320px) {
+  .header__block__2 {
+    display: none;
+  }
+
+  .main_png {
+    margin: 0 -16px;
+  }
+  
+} 
+
 @media (min-width: 768px) {
-  .swiper-wrapper {
+  .mySwiper {
     display: none;
   }
 
@@ -535,9 +553,11 @@ body {
   }
 
   .repair-services {
-    width: 100%;
+    width: auto;
+    min-width: 100%;
+    margin-top: 16px;
     margin-bottom: 24px;
-    display: block;
+    display: table;
     font-size: 14px;
     border-collapse: collapse;
   }
@@ -609,52 +629,6 @@ body {
   .footer__disclaimer {
     text-align: right;
   }
-}
-
-@media (min-width: 1120px) {
-  .brands__list,
-  .brands__readnext__list {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 32px;
-  }
-
-  .brands__list > .brands__item_hidden {
-    display: flex;
-  }
-}
-
-@media (max-width: 320px) {
-  .header__block__2 {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav__list {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  }
-
-  .nav__list {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  .main_png {
-    width: 320px;
-    height: 176px;
-    margin: 0 -16px;
-  }
-
-  .header__header__block__1__logo {
-    margin: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    padding: 0px;
-  }
 
   .content-wrapper {
     padding: 0 24px 24px;
@@ -695,6 +669,31 @@ body {
     margin-left: 36px;
     width: 360px;
     height: 208px;
+  }
+
+  .technique__item {
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .nav__list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .offer__item {
+    width: 192px;
+  }
+ 
+
+  .header__header__block__1__logo {
+    margin: 0;
   }
 }
 
@@ -878,10 +877,6 @@ body {
     padding: 0;
   }
 
-  body {
-    padding: 0;
-  }
-
   .content-wrapper {
     padding: 0 32px;
     display: flex;
@@ -891,5 +886,15 @@ body {
 
   .technique__item {
     margin-right: 32px;
+  }
+
+  .brands__list,
+  .brands__readnext__list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 32px;
+  }
+
+  .brands__list > .brands__item_hidden {
+    display: flex;
   }
 }
