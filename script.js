@@ -1,3 +1,4 @@
+/// brands
 const toggleButton = document.querySelector('.button-open');
 const additionalBrands = document.querySelector('.brands__readnext__list');
 const arrowIcon = document.querySelector('.brands__button__arrow-icon');
@@ -15,7 +16,7 @@ toggleButton.addEventListener('click', function () {
     arrowIcon.style.transform = 'rotate(0deg)';
   }
 });
-
+/// tecniques
 const toggleBtn = document.querySelector('.technique__button-open');
 const additionalTechnique = document.querySelector('.technique__readnext');
 const arrowTechnique = document.querySelector('.technique__button__arrow-icon');
@@ -36,6 +37,7 @@ toggleBtn.addEventListener('click', function () {
   }
 });
 
+/// main text
 const readMoreLink = document.querySelector('.main__readnext-link');
 const hiddenText = document.querySelector('.main__content__hidden');
 const arrow = document.querySelector('.main__expand');
@@ -46,28 +48,28 @@ readMoreLink.addEventListener('click', function (event) {
   arrow.classList.toggle('main__expand-rotate');
 });
 
+/// burger menu
 const burgerBtn = document.querySelector('.header__burger__btn');
 const closeBtn = document.querySelector('.sidebar__close__btn');
 const sidebar = document.querySelector('.sidebar');
 const blur = document.querySelector('.blur');
 
 burgerBtn.addEventListener('click', function () {
-  console.log('sidebar opened');
   sidebar.classList.toggle('sidebar_open');
-  blur.classList.toggle('blur_open');
+  toggleBlur();
 });
 
 closeBtn.addEventListener('click', function () {
-  console.log('sidebar closed');
   sidebar.classList.toggle('sidebar_open');
-  blur.classList.toggle('blur_open');
+  toggleBlur();
 });
 
-const navBtns = document.querySelectorAll('.nav__header__btn');
+/// feedback
+const navBtns = document.querySelectorAll('.contacts__chat__btn');
 navBtns.forEach(function (btn) {
   btn.addEventListener('click', function () {
     feedback.classList.toggle('feedback_open');
-    blur.classList.toggle('blur_open');
+    toggleBlur();
   });
 });
 
@@ -75,25 +77,34 @@ const feedbackCloseBtn = document.querySelector('.feedback__close-btn');
 const feedback = document.querySelector('.feedback');
 
 feedbackCloseBtn.addEventListener('click', function () {
-  console.log('nav closed');
   feedback.classList.toggle('feedback_open');
-  blur.classList.toggle('blur_open');
+  toggleBlur();
 });
 
-const headerBlockSearchBtn = document.querySelectorAll(
-  '.header__block__3__search-btn',
-);
+const callBtn = document.querySelectorAll('.contacts__phone__btn');
 const callbackCloseBtn = document.querySelector('.callback__close-btn');
 const callback = document.querySelector('.callback');
 
-headerBlockSearchBtn.forEach(function (btn) {
+callBtn.forEach(function (btn) {
   btn.addEventListener('click', function () {
     callback.classList.toggle('callback_open');
-    blur.classList.toggle('blur_open');
+    toggleBlur();
   });
 });
 
 callbackCloseBtn.addEventListener('click', function () {
   callback.classList.toggle('callback_open');
-  blur.classList.toggle('blur_open');
+  toggleBlur();
 });
+
+function toggleBlur() {
+  const openedPanels = document.querySelectorAll(
+    '.feedback_open, .callback_open, .sidebar_open',
+  );
+
+  if (openedPanels.length > 0) {
+    blur.classList.add('blur_open');
+  } else {
+    blur.classList.remove('blur_open');
+  }
+}

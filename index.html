@@ -52,17 +52,21 @@
       <footer class="footer">
         <div class="contacts">
           <div class="contacts__icon">
-            <a href="#!" class="contacts__icon__phone">
-              <div class="icon-circle">
-                <img src="./img/svg/icon3.svg" alt="Телефон" />
-              </div>
-            </a>
-            <a href="#!" class="contacts__icon__chat">
-              <div class="icon-circle">
-                <img src="./img/svg/icon4.svg" alt="Чат" />
-              </div>
-            </a>
-            <a href="#!" class="contacts__icon__profile">
+            <button class="contacts__phone__btn">
+              <a href="#" class="contacts__icon__phone">
+                <div class="icon-circle">
+                  <img src="./img/svg/icon3.svg" alt="Телефон" />
+                </div>
+              </a>
+            </button>
+            <button class="contacts__chat__btn">
+              <a href="#" class="contacts__icon__chat">
+                <div class="icon-circle">
+                  <img src="./img/svg/icon4.svg" alt="Чат" />
+                </div>
+              </a>
+            </button>
+            <a href="#" class="contacts__icon__profile">
               <div class="icon-circle">
                 <img src="./img/svg/Group 2.svg" alt="Профиль" />
               </div>
@@ -83,41 +87,74 @@
 
     <div class="blur"></div>
     <div class="feedback">
-        <button class="feedback__close-btn">
-          <img src="./img/svg/icon.svg" alt="Крестик">
+      <button class="feedback__close-btn">
+        <img src="./img/svg/icon.svg" alt="Крестик" />
+      </button>
+      <div class="feedback_border"></div>
+      <h2 class="feedback__title">Обратная связь</h2>
+      <form class="feedback__form">
+        <input type="text" class="feedback__input" placeholder="Имя" required />
+        <input
+          type="tel"
+          class="feedback__input"
+          placeholder="Телефон"
+          required
+        />
+        <input
+          type="email"
+          class="feedback__input"
+          placeholder="Электронная почта"
+          required
+        />
+        <textarea
+          class="feedback__input feedback__textarea"
+          placeholder="Сообщение"
+          required
+        ></textarea>
+        <p class="feedback__agreement">
+          Нажимая "отправить", вы даете согласие на
+          <a href="#" class="feedback__policy-link"
+            >обработку персональных данных</a
+          >
+          и соглашаетесь с нашей
+          <a href="#" class="feedback__policy-link"
+            >политикой конфиденциальности</a
+          >.
+        </p>
+        <button type="submit" class="feedback__submit-btn">
+          Отправить <span>></span>
         </button>
-          <div class="feedback_border"></div>
-          <h2 class="feedback__title">Обратная связь</h2>
-        <form class="feedback__form">
-            <input type="text" class="feedback__input" placeholder="Имя" required>
-            <input type="tel" class="feedback__input" placeholder="Телефон" required>
-            <input type="email" class="feedback__input" placeholder="Электронная почта" required>
-            <textarea class="feedback__input feedback__textarea" placeholder="Сообщение" required></textarea>
-            <p class="feedback__agreement">
-                Нажимая "отправить", вы даете согласие на <a href="#" class="feedback__policy-link">обработку персональных данных</a> и соглашаетесь с нашей
-                <a href="#" class="feedback__policy-link">политикой конфиденциальности</a>.
-            </p>
-            <button type="submit" class="feedback__submit-btn">Отправить <span>></span></button>
-        </form>
+      </form>
     </div>
 
     <div class="blur"></div>
     <div class="callback">
       <button class="callback__close-btn">
-        <img src="./img/svg/icon.svg" alt="Крестик">
+        <img src="./img/svg/icon.svg" alt="Крестик" />
       </button>
       <div class="callback_border"></div>
       <h2 class="callback__title">Заказать звонок</h2>
-    <form class="callback__form">
-      <input type="tel" class="callback__input" placeholder="Телефон" required>
-      <p class="callback__agreement">
-        Нажимая "отправить", вы даете согласие на
-        <a href="#" class="callback__policy-link">обработку персональных данных</a>
-        и соглашаетесь с нашей
-        <a href="#" class="callback__policy-link">политикой конфиденциальности</a>.
-    </p>
-    <button type="submit" class="callback__submit-btn">Отправить <img src="./img/dropdown.svg" alt="Далее" class=""></button>
-    </form>
+      <form class="callback__form">
+        <input
+          type="tel"
+          class="callback__input"
+          placeholder="Телефон"
+          required
+        />
+        <p class="callback__agreement">
+          Нажимая "отправить", вы даете согласие на
+          <a href="#" class="callback__policy-link"
+            >обработку персональных данных</a
+          >
+          и соглашаетесь с нашей
+          <a href="#" class="callback__policy-link"
+            >политикой конфиденциальности</a
+          >.
+        </p>
+        <button type="submit" class="callback__submit-btn">
+          Отправить <img src="./img/dropdown.svg" alt="Далее" class="" />
+        </button>
+      </form>
     </div>
 
     <div class="content-wrapper">
@@ -146,16 +183,20 @@
           </a>
         </div>
         <div class="header__block__2">
-          <img
-            src="./img/svg/call.svg"
-            alt="Телефон"
-            class="header__block__2__item"
-          />
-          <img
-            src="./img/svg/chat.svg"
-            alt="Чат"
-            class="header__block__2__item"
-          />
+          <button class="contacts__phone__btn">
+            <img
+              src="./img/svg/call.svg"
+              alt="Телефон"
+              class="header__block__2__item"
+            />
+          </button>
+          <button class="contacts__chat__btn">
+            <img
+              src="./img/svg/chat.svg"
+              alt="Чат"
+              class="header__block__2__item"
+            />
+          </button>
           <img
             src="./img/svg/profile.svg"
             alt="Профиль"
@@ -168,20 +209,16 @@
             alt="Разделитель"
             class="header__block__3__divider"
           />
-          <button class="nav__header__btn">
-              <img
-              src="./img/svg/repair.svg"
-              alt="Инструменты"
-              class="header__block__3__item"
-              />
-          </button>
-          <button class="header__block__3__search-btn">
+          <img
+            src="./img/svg/repair.svg"
+            alt="Инструменты"
+            class="header__block__3__item"
+          />
           <img
             src="./img/svg/checkstatus.svg"
             alt="Лупа"
             class="header__block__3__item"
           />
-          </button>
         </div>
       </header>
 
@@ -193,19 +230,16 @@
               <h1 class="nav__header__title">Услуги и сервисы</h1>
             </div>
             <ul class="nav__header__nav__list">
-              <button class="nav__header__btn">
               <li class="nav__header__nav__list__item">
-                  <a href="#!" class="nav__header__nav__list__link">
-                    Оставить заявку
-                  </a>
+                <a href="#!" class="nav__header__nav__list__link">
+                  Оставить заявку
+                </a>
                 <img
                   src="./img/svg/repair.svg"
                   alt="Инструменты"
                   class="header__svg"
                 />
-                </button>
               </li>
-              <button class="header__block__3__search-btn">
               <li class="nav__header__nav__list__item">
                 <a href="#!" class="nav__header__nav__list__link"
                   >Статус ремонта</a
@@ -215,7 +249,6 @@
                   alt="Лупа"
                   class="header__svg"
                 />
-              </button>
               </li>
             </ul>
           </div>

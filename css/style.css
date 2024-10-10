@@ -7,6 +7,7 @@ body {
   margin: 0 auto;
   font-family: 'TT Lakes';
   line-height: 1.6;
+  overflow-x: hidden;
   background-color: #f8f8f8;
 }
 
@@ -48,12 +49,9 @@ body {
   margin: 0 4px;
 }
 
-.header__header__block__1__logo {
+.header__header__block__1__logo,
+.header__block__3__divider {
   margin-left: 16px;
-}
-
-.header__block__2__item {
-  margin-right: 16px;
 }
 
 .header__block__3__item {
@@ -432,6 +430,7 @@ body {
   position: fixed;
   top: 0;
   left: -320px;
+  bottom: 0;
   opacity: 0;
   z-index: -1;
   transition:
@@ -456,8 +455,8 @@ body {
 }
 
 .header__burger__btn,
-.nav__header__btn,
-.header__block__3__search-btn {
+.contacts__chat__btn,
+.contacts__phone__btn {
   font-family: 'TT Lakes';
   background: none;
   border: none;
@@ -548,9 +547,8 @@ body {
   background-color: #ffffff;
 }
 
-.contacts__icon__phone,
-.contacts__icon__chat,
-.ontacts__icon__profile {
+.contacts__phone__btn,
+.contacts__chat__btn {
   margin-right: 16px;
 }
 
@@ -616,7 +614,7 @@ body {
   transition:
     right 0.5s ease,
     opacity 0.5s ease,
-    z-index 0.5s;
+    z-index 0.1s;
   box-shadow: 0 16px 52px rgba(14, 24, 80, 0.3);
   box-sizing: border-box;
 }
@@ -733,7 +731,6 @@ body {
   display: none;
 }
 
-
 @media (max-width: 320px) {
   .header__block__2 {
     display: none;
@@ -745,7 +742,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .mySwiper{
+  .mySwiper {
     display: none;
   }
 
@@ -762,6 +759,14 @@ body {
     display: block;
     width: 40px;
     height: 40px;
+  }
+
+  .sidebar_open {
+    overflow-y: auto;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    display: none;
   }
 
   .brands__readnext__list {
@@ -955,7 +960,7 @@ body {
   .callback {
     width: 440px;
     padding: 40px 32px;
-    border-left: 1px solid #D9FFF5;
+    border-left: 1px solid #d9fff5;
   }
 
   .feedback__close-btn,
@@ -966,13 +971,12 @@ body {
 
   .technique__button__arrow-icon {
     transition: transform 0.3s ease;
-}
+  }
 
-.technique__readnext {
-  width: 240px;
-  margin-bottom: 16px;
-}
-
+  .technique__readnext {
+    width: 240px;
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 768px) {
